@@ -85,7 +85,18 @@ body {
     padding: 0;
 }
 
-
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.modal-content{
+    /*background: url('banner-1.jpg');
+    background-size: cover;
+    background-position: center center;*/
+}
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
@@ -610,7 +621,6 @@ fieldset {
 input[type="email"],
 input[type="number"],
 input[type="search"],
-input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
@@ -1800,6 +1810,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: 0;
     margin-bottom: 1.2rem;
     margin-left: 6px;
+    text-align: right;
 }
 
 .home-content h1 {
@@ -1808,6 +1819,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     line-height: 1.333;
     margin-top: 0;
     color: #FFFFFF;
+    text-align: right;
 }
 
 .home-content__main {
@@ -1817,7 +1829,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons {
     padding-top: 6rem;
-    text-align: left;
+    text-align: right;
 }
 
 .home-content__buttons .btn {
@@ -2198,13 +2210,15 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 16.2rem;
+    padding-top: 9rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background-color: #fff;
     color: #010507;
     position: relative;
 }
-
+.navbar-nav{
+    float: right;
+}
 .s-about .section-header.has-bottom-sep::before {
     background-color: rgba(255, 255, 255, 0.25);
 }
@@ -3031,9 +3045,9 @@ html.no-csstransitions .home-content__main {
 .contact-content input[type="password"],
 .contact-content textarea,
 .contact-content select {
-    color: rgba(255, 255, 255, 0.6);
+    /*color: rgba(255, 255, 255, 0.6);
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-    margin-bottom: .9rem;
+    margin-bottom: .9rem;*/
 }
 
 .contact-content input[type="email"]:focus,
