@@ -2239,7 +2239,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats__col {
-    margin: 5.4rem 0;
+    margin: 2rem 0;
     padding: 0 2rem;
     position: relative;
     overflow: hidden;
@@ -2261,7 +2261,9 @@ html.no-csstransitions .home-content__main {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
+.sponsors{
+    padding: 5.0rem 0; 
+}
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
     margin-top: 1.8rem;
