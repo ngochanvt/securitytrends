@@ -15,7 +15,7 @@ $mail->Port = 465;                                    // TCP port to connect to
 
 $mail->From = 'sale.bangtoshop@gmail.com';
 $mail->FromName = 'Mailer';
-$mail->addAddress('ngochanvt0402@gmail.com', 'Han tran');     // Add a recipient
+$mail->addAddress($_POST["email"], $_POST["name"]);     // Add a recipient
 
 //$mail->addReplyTo('info@example.com', 'Information');
 $mail->isHTML(true);                                  // Set email format to HTML
