@@ -8,12 +8,12 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'zunik.web.contact@gmail.com';                 // SMTP username
-$mail->Password = 'han11235813';                           // SMTP password
+$mail->Username = 'sale.bangtoshop@gmail.com';                 // SMTP username
+$mail->Password = 'shopbangtosale8888';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
-$mail->From = 'zunik.web.contact@gmail.com';
+$mail->From = 'sale.bangtoshop@gmail.com';
 $mail->FromName = 'Mailer';
 $mail->addAddress('ngochanvt0402@gmail.com', 'Han tran');     // Add a recipient
 
