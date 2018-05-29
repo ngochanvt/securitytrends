@@ -1,3 +1,4 @@
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <?php
 require_once("PHPMailerAutoload.php");
 
@@ -14,13 +15,13 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
 
 $mail->From = 'sale.bangtoshop@gmail.com';
-$mail->FromName = 'Mailer';
+$mail->FromName = 'Test Email microsite';
 $mail->addAddress($_POST["email"], $_POST["name"]);     // Add a recipient
 
 //$mail->addReplyTo('info@example.com', 'Information');
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Here is the subject';
+$mail->Subject = 'Here is the email from microsite ';
 $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
