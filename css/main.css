@@ -74,7 +74,7 @@ html, body {
 }
 
 body {
-    background: #111111;
+    
     font-family: "lora-regular", serif;
     font-size: 1.7rem;
     font-style: normal;
@@ -330,10 +330,10 @@ mark {
 }
 
 hr {
-    border: solid rgba(0, 0, 0, 0.1);
+    border: solid rgba(0, 0, 0, 0.5);
     border-width: 1px 0 0;
     clear: both;
-    margin: 2.4rem 0 1.5rem;
+    /*margin: 2.0rem 0 1.4rem;*/
     height: 0;
 }
 
@@ -432,41 +432,6 @@ img.pull-left {
 /* ------------------------------------------------------------------- 
  * ## tables
  * ------------------------------------------------------------------- */
-table {
-    border-width: 0;
-    width: 100%;
-    max-width: 100%;
-    font-family: "lora-regular", serif;
-}
-
-th, td {
-    padding: 1.5rem 3rem;
-    text-align: left;
-    border-bottom: 1px solid #E8E8E8;
-}
-
-th {
-    color: #000000;
-    font-family: "montserrat-bold", sans-serif;
-}
-
-td {
-    line-height: 1.5;
-}
-
-th:first-child, td:first-child {
-    padding-left: 0;
-}
-
-th:last-child, td:last-child {
-    padding-right: 0;
-}
-
-.table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
 
 /* ------------------------------------------------------------------- 
  * ## Spacing 
@@ -2210,8 +2175,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #fff;
     color: #010507;
     position: relative;
@@ -3614,6 +3579,51 @@ footer .row {
         padding-left: 0;
     }
 }
-
-
+#speaker, #contact{
+    background: #f8f8f8 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.place{
+    text-align: center;
+    cursor:pointer;
+}
+.place hr{
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.place p{
+    margin-bottom: 0!important;
+}
+.place p, i{
+    text-align: center;
+}
+#sponsors .place{
+    height: 107px;
+    overflow: hidden;
+    position: relative;
+}
+#sponsors img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+}
+#sponsors h3, #speaker h3, #chuongtrinh h3{
+    text-align: center;
+}
+.p-hover{
+    color: #f00;
+    font-size: 125%;
+}
+#download{
+    margin-top: 10%;
+}
+.flat{
+   height: 25px;
+    margin-top: 10px;
+}
 /*# sourceMappingURL=main.css.map */
